@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Component, Inject, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +8,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'b5';
+
+  constructor(@Inject(DOCUMENT) private document: Document) {
+    this.document.body.addEventListener("click", () => {
+      var element = document.getElementsByTagName('ul');
+      for (var i = 0; i < element.length; i++) {
+        if (element[i].classList.contains('closethis')) {
+          element[i].classList.remove('show');
+        }
+      }
+    }, true);
+   }
 
   ngOnInit(): void {
 
@@ -29,35 +41,5 @@ export class AppComponent {
   }
 
 
-  menuOpen(e:any){
-    const element: HTMLElement = e.target;
-    var ele = element.nextElementSibling
-    
-    if (ele?.classList.contains('show')){
-      ele?.classList.remove('show')
-    }
-    else{
-      ele?.classList.add('show')
-    }
-
-  }
-
-  openMenu(e:any){
-    const element: HTMLElement = e.target;
-    const ele = element.nextElementSibling?.nextElementSibling
-    const elem = element.nextElementSibling
-    // console.log(ele)
-    if (ele?.classList.contains('show') || elem?.classList.contains('show')){
-      ele?.classList.remove('show') 
-      elem?.classList.remove('show') 
-    }
-    else{
-      ele?.classList.add('show') 
-      elem?.classList.add('show')
-    }
-    
-  }
-
-  
 
 }

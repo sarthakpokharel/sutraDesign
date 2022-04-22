@@ -1,0 +1,1155 @@
+<section class="" style="top:0; position:absolute; width:100%">
+    <nav class="navbar navbar-expand-sm blue topHeader">
+      <div class="container-fluid">
+  
+        <div class="container">
+          <div class="float-start .d-none .d-sm-block" style="color: aliceblue;">
+  
+            <img src="https://sutra.fcgo.gov.np/sutra2/images/nepal-gov-logo.png" height="25px" width="25px">
+            संचितकोष व्यवस्थापन प्रणाली [ कन्फिगरेसन]
+  
+  
+          </div>
+          <div class="float-end texts">
+  
+            <ul class="nav navbar-nav navbar-right">
+              <li><img src="https://sutra.fcgo.gov.np/sutra2/img/user.jpg" alt="" style="height: 33px; width: 35px;">
+                पंकज अधिकारी
+                [अर्थ मन्त्रालय काठमाडौ]
+              </li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <li>होम </li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <li>बाहिर जानुहोस
+                <span>(current)</span>
+              </li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <li>
+  
+                <div class="dropdown">
+  
+                  <i class="fa fa-caret-down" (click)="menuOpen($event)" style="cursor: pointer;"></i>
+  
+                  <div class="dropdown-menu" style="z-index: 1031;">
+                    <a class="dropdown-item" href="javascript:void(0)">Action</a>
+                    <a class="dropdown-item" href="javascript:void(0)">Another action</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+  
+          </div>
+  
+        </div>
+  
+  
+      </div>
+    </nav>
+  </section>
+  
+  <section style="width: 100%;
+  background-color:   #BFDBFF url(../assets/i01_bg.png) repeat-x scroll center top;
+      background-color: rgb(191, 219, 255);
+      background-position-x: center;
+      background-position-y: top;
+      background-repeat: repeat-x;
+      background-attachment: scroll;
+      background-image: url('../assets/i01_bg.png');
+      background-size: auto;
+      background-origin: padding-box;
+      background-clip: border-box;
+  ">
+    <div class="row" style="width: 100%;
+     background-color:   #BFDBFF url(../assets/i01_bg.png) repeat-x scroll center top;
+      background-color: rgb(191, 219, 255);
+      background-position-x: center;
+      background-position-y: top;
+      background-repeat: repeat-x;
+      background-attachment: scroll;
+      background-image: url('../assets/i01_bg.png');
+      background-size: auto;
+      background-origin: padding-box;
+      background-clip: border-box;
+    ">
+      <div class="d-flex" style="position:relative;width:100%;height: 135px;">
+        <div class="main-menu d-inline-block">
+          <div class="row ml-1" >
+            
+            <div class="btn-group dropend">
+              <div class="d-flex">
+                <i class="bi bi-grid-3x3-gap-fill" style="font-size: larger; cursor: pointer;" (click)="openMenu($event)"></i> &nbsp;
+                <i class="fa fa-caret-down" style="font-size: larger; margin-top: 5px;cursor: pointer;" (click)="openMenu($event)"></i>
+  
+                <ul class="dropdown-menu closethis" style="z-index: 1500; border: solid #AEBACB; background-color: #ccdbee; top: 20px">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="" (mouseover)="openSubMenu($event)">
+                      Submenu <i class="bi bi-caret-right-fill"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-submenu closethis">
+                      <li>
+                        <a class="dropdown-item" href="#">Submenu item 1</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Submenu item 2</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Submenu item 3</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Submenu item 4</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Submenu item 5</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              
+            </div>
+           
+          
+          </div>
+          
+        </div>
+        <div class="container-fluid d-inline-block">
+          <div class="tab-menu" style="position: relative;
+          top: 4px;">
+            <tabset>
+              <tab heading="आधारभूत सेटअप" id="tab1">
+                <div class="d-flex align-items-stretch bd-highlight text-nowrap">
+                  <drag-scroll [scroll-x-wheel-enabled] = true>
+                    <div class="p-2 bd-highlight" drag-scroll-item>
+                      <div class="inset">
+                        <div class="submenu-container">
+                          <div class="submenu-inner-container">
+        
+                            <ul class="float-start menu-ribbon">
+        
+        
+                              <li title="भाषा">
+                                <a id="ribbon__2854960284115885_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/language.png" width="16"
+                                    height="16">भाषा</a>
+                              </li>
+        
+        
+                              <li title="frmchequeprintsetting">
+                                <a id="ribbon__11183828530406910_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/createuser.gif" width="16" height="16">चेक
+                                  प्रिन्ट सेटिंग</a>
+                              </li>
+        
+                              <li title="voucher Unapproved">
+                                <a id="ribbon__11193653558215345_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131842 - erase.ico" width="16"
+                                    height="16">voucher Unapproved</a>
+                              </li>
+        
+        
+                            </ul>
+                            <ul class="float-start menu-ribbon">
+        
+        
+                              <li title="Virement approved">
+                                <a id="ribbon__11193653558215349_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131856 - yes.ico" width="16"
+                                    height="16">Virement approved</a>
+                              </li>
+        
+        
+                              <li title="Katti dakhila milaune">
+                                <a id="ribbon__53296016127012256_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/icon/delete.jpg" width="16" height="16">Katti dakhila
+                                  milaune</a>
+                              </li>
+        
+                              <li title="Day Close Enable">
+                                <a id="ribbon__100622502233250234_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131856 - yes.ico" width="16"
+                                    height="16">Day Close Enable</a>
+                              </li>
+        
+        
+                            </ul>
+        
+                            <ul class="float-start menu-ribbon">
+        
+        
+                              <li title="ePayment Enable">
+                                <a id="ribbon__100622502233250235_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131856 - yes.ico" width="16"
+                                    height="16">ePayment Enable</a>
+                              </li>
+        
+                              <li title="ePayment Status">
+                                <a id="ribbon__100622502233250236_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131856 - yes.ico" width="16"
+                                    height="16">ePayment Status</a>
+                              </li>
+        
+                            </ul>
+        
+        
+        
+        
+                          </div>
+        
+                          <div class="" style="margin-top: -10px;">
+                            <a id="ribbon__40285601594864618_group" class="text-center" tabindex="0">प्रणाली</a>
+                          </div>
+        
+        
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-2 bd-highlight" drag-scroll-item>
+                      <div class="inset">
+                        <div class="submenu-container">
+                          <div class="submenu-inner-container">
+        
+                            <ul class="float-start menu-ribbon">
+        
+        
+                              <li title="भाषा">
+                                <a id="ribbon__2854960284115885_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/language.png" width="16"
+                                    height="16">भाषा</a>
+                              </li>
+        
+        
+                              <li title="frmchequeprintsetting">
+                                <a id="ribbon__11183828530406910_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/createuser.gif" width="16" height="16">चेक
+                                  प्रिन्ट सेटिंग</a>
+                              </li>
+        
+                              <li title="voucher Unapproved">
+                                <a id="ribbon__11193653558215345_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131842 - erase.ico" width="16"
+                                    height="16">voucher Unapproved</a>
+                              </li>
+        
+        
+                            </ul>
+                            <ul class="float-start menu-ribbon">
+        
+        
+                              <li title="Virement approved">
+                                <a id="ribbon__11193653558215349_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131856 - yes.ico" width="16"
+                                    height="16">Virement approved</a>
+                              </li>
+        
+        
+                              <li title="Katti dakhila milaune">
+                                <a id="ribbon__53296016127012256_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/icon/delete.jpg" width="16" height="16">Katti dakhila
+                                  milaune</a>
+                              </li>
+        
+                              <li title="Day Close Enable">
+                                <a id="ribbon__100622502233250234_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131856 - yes.ico" width="16"
+                                    height="16">Day Close Enable</a>
+                              </li>
+        
+        
+                            </ul>
+        
+                            <ul class="float-start menu-ribbon">
+        
+        
+                              <li title="ePayment Enable">
+                                <a id="ribbon__100622502233250235_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131856 - yes.ico" width="16"
+                                    height="16">ePayment Enable</a>
+                              </li>
+        
+                              <li title="ePayment Status">
+                                <a id="ribbon__100622502233250236_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131856 - yes.ico" width="16"
+                                    height="16">ePayment Status</a>
+                              </li>
+        
+                            </ul>
+        
+        
+        
+        
+                          </div>
+        
+                          <div class="" style="margin-top: -10px;">
+                            <a id="ribbon__40285601594864618_group" class="text-center" tabindex="0">प्रणाली</a>
+                          </div>
+        
+        
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-2 bd-highlight" drag-scroll-item>
+                      <div class="inset">
+                        <div class="submenu-container">
+                          <div class="submenu-inner-container">
+        
+                            <ul class="float-start menu-ribbon">
+        
+        
+                              <li title="भाषा">
+                                <a id="ribbon__2854960284115885_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/language.png" width="16"
+                                    height="16">भाषा</a>
+                              </li>
+        
+        
+                              <li title="frmchequeprintsetting">
+                                <a id="ribbon__11183828530406910_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/createuser.gif" width="16" height="16">चेक
+                                  प्रिन्ट सेटिंग</a>
+                              </li>
+        
+                              <li title="voucher Unapproved">
+                                <a id="ribbon__11193653558215345_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131842 - erase.ico" width="16"
+                                    height="16">voucher Unapproved</a>
+                              </li>
+        
+        
+                            </ul>
+                            <ul class="float-start menu-ribbon">
+        
+        
+                              <li title="Virement approved">
+                                <a id="ribbon__11193653558215349_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131856 - yes.ico" width="16"
+                                    height="16">Virement approved</a>
+                              </li>
+        
+        
+                              <li title="Katti dakhila milaune">
+                                <a id="ribbon__53296016127012256_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/icon/delete.jpg" width="16" height="16">Katti dakhila
+                                  milaune</a>
+                              </li>
+        
+                              <li title="Day Close Enable">
+                                <a id="ribbon__100622502233250234_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131856 - yes.ico" width="16"
+                                    height="16">Day Close Enable</a>
+                              </li>
+        
+        
+                            </ul>
+        
+                            <ul class="float-start menu-ribbon">
+        
+        
+                              <li title="ePayment Enable">
+                                <a id="ribbon__100622502233250235_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131856 - yes.ico" width="16"
+                                    height="16">ePayment Enable</a>
+                              </li>
+        
+                              <li title="ePayment Status">
+                                <a id="ribbon__100622502233250236_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131856 - yes.ico" width="16"
+                                    height="16">ePayment Status</a>
+                              </li>
+        
+                            </ul>
+        
+        
+        
+        
+                          </div>
+        
+                          <div class="" style="margin-top: -10px;">
+                            <a id="ribbon__40285601594864618_group" class="text-center" tabindex="0">प्रणाली</a>
+                          </div>
+        
+        
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-2 bd-highlight" drag-scroll-item>
+                      <div class="inset">
+                        <div class="submenu-container">
+                          <div class="submenu-inner-container">
+        
+                            <ul class="float-start menu-ribbon">
+        
+        
+                              <li title="भाषा">
+                                <a id="ribbon__2854960284115885_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/language.png" width="16"
+                                    height="16">भाषा</a>
+                              </li>
+        
+        
+                              <li title="frmchequeprintsetting">
+                                <a id="ribbon__11183828530406910_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/createuser.gif" width="16" height="16">चेक
+                                  प्रिन्ट सेटिंग</a>
+                              </li>
+        
+                              <li title="voucher Unapproved">
+                                <a id="ribbon__11193653558215345_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131842 - erase.ico" width="16"
+                                    height="16">voucher Unapproved</a>
+                              </li>
+        
+        
+                            </ul>
+                            <ul class="float-start menu-ribbon">
+        
+        
+                              <li title="Virement approved">
+                                <a id="ribbon__11193653558215349_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131856 - yes.ico" width="16"
+                                    height="16">Virement approved</a>
+                              </li>
+        
+        
+                              <li title="Katti dakhila milaune">
+                                <a id="ribbon__53296016127012256_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/icon/delete.jpg" width="16" height="16">Katti dakhila
+                                  milaune</a>
+                              </li>
+        
+                              <li title="Day Close Enable">
+                                <a id="ribbon__100622502233250234_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131856 - yes.ico" width="16"
+                                    height="16">Day Close Enable</a>
+                              </li>
+        
+        
+                            </ul>
+        
+                            <ul class="float-start menu-ribbon">
+        
+        
+                              <li title="ePayment Enable">
+                                <a id="ribbon__100622502233250235_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131856 - yes.ico" width="16"
+                                    height="16">ePayment Enable</a>
+                              </li>
+        
+                              <li title="ePayment Status">
+                                <a id="ribbon__100622502233250236_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131856 - yes.ico" width="16"
+                                    height="16">ePayment Status</a>
+                              </li>
+        
+                            </ul>
+        
+        
+        
+        
+                          </div>
+        
+                          <div class="" style="margin-top: -10px;">
+                            <a id="ribbon__40285601594864618_group" class="text-center" tabindex="0">प्रणाली</a>
+                          </div>
+        
+        
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-2 bd-highlight" drag-scroll-item>
+                      <div class="inset">
+                        <div class="submenu-container">
+                          <div class="submenu-inner-container">
+        
+                            <ul class="float-start menu-ribbon">
+        
+        
+                              <li title="भाषा">
+                                <a id="ribbon__2854960284115885_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/language.png" width="16"
+                                    height="16">भाषा</a>
+                              </li>
+        
+        
+                              <li title="frmchequeprintsetting">
+                                <a id="ribbon__11183828530406910_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/createuser.gif" width="16" height="16">चेक
+                                  प्रिन्ट सेटिंग</a>
+                              </li>
+        
+                              <li title="voucher Unapproved">
+                                <a id="ribbon__11193653558215345_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131842 - erase.ico" width="16"
+                                    height="16">voucher Unapproved</a>
+                              </li>
+        
+        
+                            </ul>
+                            <ul class="float-start menu-ribbon">
+        
+        
+                              <li title="Virement approved">
+                                <a id="ribbon__11193653558215349_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131856 - yes.ico" width="16"
+                                    height="16">Virement approved</a>
+                              </li>
+        
+        
+                              <li title="Katti dakhila milaune">
+                                <a id="ribbon__53296016127012256_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/icon/delete.jpg" width="16" height="16">Katti dakhila
+                                  milaune</a>
+                              </li>
+        
+                              <li title="Day Close Enable">
+                                <a id="ribbon__100622502233250234_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131856 - yes.ico" width="16"
+                                    height="16">Day Close Enable</a>
+                              </li>
+        
+        
+                            </ul>
+        
+                            <ul class="float-start menu-ribbon">
+        
+        
+                              <li title="ePayment Enable">
+                                <a id="ribbon__100622502233250235_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131856 - yes.ico" width="16"
+                                    height="16">ePayment Enable</a>
+                              </li>
+        
+                              <li title="ePayment Status">
+                                <a id="ribbon__100622502233250236_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131856 - yes.ico" width="16"
+                                    height="16">ePayment Status</a>
+                              </li>
+        
+                            </ul>
+        
+        
+        
+        
+                          </div>
+        
+                          <div class="" style="margin-top: -10px;">
+                            <a id="ribbon__40285601594864618_group" class="text-center" tabindex="0">प्रणाली</a>
+                          </div>
+        
+        
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-2 bd-highlight" drag-scroll-item>
+                      <div class="inset">
+                        <div class="submenu-container">
+                          <div class="submenu-inner-container">
+        
+                            <ul class="float-start menu-ribbon">
+        
+        
+                              <li title="भाषा">
+                                <a id="ribbon__2854960284115885_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/language.png" width="16"
+                                    height="16">भाषा</a>
+                              </li>
+        
+        
+                              <li title="frmchequeprintsetting">
+                                <a id="ribbon__11183828530406910_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/createuser.gif" width="16" height="16">चेक
+                                  प्रिन्ट सेटिंग</a>
+                              </li>
+        
+                              <li title="voucher Unapproved">
+                                <a id="ribbon__11193653558215345_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131842 - erase.ico" width="16"
+                                    height="16">voucher Unapproved</a>
+                              </li>
+        
+        
+                            </ul>
+                            <ul class="float-start menu-ribbon">
+        
+        
+                              <li title="Virement approved">
+                                <a id="ribbon__11193653558215349_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131856 - yes.ico" width="16"
+                                    height="16">Virement approved</a>
+                              </li>
+        
+        
+                              <li title="Katti dakhila milaune">
+                                <a id="ribbon__53296016127012256_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/icon/delete.jpg" width="16" height="16">Katti dakhila
+                                  milaune</a>
+                              </li>
+        
+                              <li title="Day Close Enable">
+                                <a id="ribbon__100622502233250234_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131856 - yes.ico" width="16"
+                                    height="16">Day Close Enable</a>
+                              </li>
+        
+        
+                            </ul>
+        
+                            <ul class="float-start menu-ribbon">
+        
+        
+                              <li title="ePayment Enable">
+                                <a id="ribbon__100622502233250235_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131856 - yes.ico" width="16"
+                                    height="16">ePayment Enable</a>
+                              </li>
+        
+                              <li title="ePayment Status">
+                                <a id="ribbon__100622502233250236_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131856 - yes.ico" width="16"
+                                    height="16">ePayment Status</a>
+                              </li>
+        
+                            </ul>
+        
+        
+        
+        
+                          </div>
+        
+                          <div class="" style="margin-top: -10px;">
+                            <a id="ribbon__40285601594864618_group" class="text-center" tabindex="0">प्रणाली</a>
+                          </div>
+        
+        
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-2 bd-highlight" drag-scroll-item>
+                      <div class="inset">
+                        <div class="submenu-container">
+                          <div class="submenu-inner-container">
+        
+                            <ul class="float-start menu-ribbon">
+        
+        
+                              <li title="भाषा">
+                                <a id="ribbon__2854960284115885_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/language.png" width="16"
+                                    height="16">भाषा</a>
+                              </li>
+        
+        
+                              <li title="frmchequeprintsetting">
+                                <a id="ribbon__11183828530406910_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/createuser.gif" width="16" height="16">चेक
+                                  प्रिन्ट सेटिंग</a>
+                              </li>
+        
+                              <li title="voucher Unapproved">
+                                <a id="ribbon__11193653558215345_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131842 - erase.ico" width="16"
+                                    height="16">voucher Unapproved</a>
+                              </li>
+        
+        
+                            </ul>
+                            <ul class="float-start menu-ribbon">
+        
+        
+                              <li title="Virement approved">
+                                <a id="ribbon__11193653558215349_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131856 - yes.ico" width="16"
+                                    height="16">Virement approved</a>
+                              </li>
+        
+        
+                              <li title="Katti dakhila milaune">
+                                <a id="ribbon__53296016127012256_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/icon/delete.jpg" width="16" height="16">Katti dakhila
+                                  milaune</a>
+                              </li>
+        
+                              <li title="Day Close Enable">
+                                <a id="ribbon__100622502233250234_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131856 - yes.ico" width="16"
+                                    height="16">Day Close Enable</a>
+                              </li>
+        
+        
+                            </ul>
+        
+                            <ul class="float-start menu-ribbon">
+        
+        
+                              <li title="ePayment Enable">
+                                <a id="ribbon__100622502233250235_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131856 - yes.ico" width="16"
+                                    height="16">ePayment Enable</a>
+                              </li>
+        
+                              <li title="ePayment Status">
+                                <a id="ribbon__100622502233250236_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131856 - yes.ico" width="16"
+                                    height="16">ePayment Status</a>
+                              </li>
+        
+                            </ul>
+        
+        
+        
+        
+                          </div>
+        
+                          <div class="" style="margin-top: -10px;">
+                            <a id="ribbon__40285601594864618_group" class="text-center" tabindex="0">प्रणाली</a>
+                          </div>
+        
+        
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-2 bd-highlight" drag-scroll-item>
+                      <div class="inset">
+                        <div class="submenu-container">
+                          <div class="submenu-inner-container">
+        
+                            <ul class="float-start menu-ribbon">
+        
+        
+                              <li title="भाषा">
+                                <a id="ribbon__2854960284115885_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/language.png" width="16"
+                                    height="16">भाषा</a>
+                              </li>
+        
+        
+                              <li title="frmchequeprintsetting">
+                                <a id="ribbon__11183828530406910_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/createuser.gif" width="16" height="16">चेक
+                                  प्रिन्ट सेटिंग</a>
+                              </li>
+        
+                              <li title="voucher Unapproved">
+                                <a id="ribbon__11193653558215345_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131842 - erase.ico" width="16"
+                                    height="16">voucher Unapproved</a>
+                              </li>
+        
+        
+                            </ul>
+                            <ul class="float-start menu-ribbon">
+        
+        
+                              <li title="Virement approved">
+                                <a id="ribbon__11193653558215349_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131856 - yes.ico" width="16"
+                                    height="16">Virement approved</a>
+                              </li>
+        
+        
+                              <li title="Katti dakhila milaune">
+                                <a id="ribbon__53296016127012256_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/icon/delete.jpg" width="16" height="16">Katti dakhila
+                                  milaune</a>
+                              </li>
+        
+                              <li title="Day Close Enable">
+                                <a id="ribbon__100622502233250234_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131856 - yes.ico" width="16"
+                                    height="16">Day Close Enable</a>
+                              </li>
+        
+        
+                            </ul>
+        
+                            <ul class="float-start menu-ribbon">
+        
+        
+                              <li title="ePayment Enable">
+                                <a id="ribbon__100622502233250235_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131856 - yes.ico" width="16"
+                                    height="16">ePayment Enable</a>
+                              </li>
+        
+                              <li title="ePayment Status">
+                                <a id="ribbon__100622502233250236_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131856 - yes.ico" width="16"
+                                    height="16">ePayment Status</a>
+                              </li>
+        
+                            </ul>
+        
+        
+        
+        
+                          </div>
+        
+                          <div class="" style="margin-top: -10px;">
+                            <a id="ribbon__40285601594864618_group" class="text-center" tabindex="0">प्रणाली</a>
+                          </div>
+        
+        
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-2 bd-highlight" drag-scroll-item>
+                      <div class="inset">
+                        <div class="submenu-container">
+                          <div class="submenu-inner-container">
+        
+                            <ul class="float-start menu-ribbon">
+        
+        
+                              <li title="भाषा">
+                                <a id="ribbon__2854960284115885_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/language.png" width="16"
+                                    height="16">भाषा</a>
+                              </li>
+        
+        
+                              <li title="frmchequeprintsetting">
+                                <a id="ribbon__11183828530406910_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/createuser.gif" width="16" height="16">चेक
+                                  प्रिन्ट सेटिंग</a>
+                              </li>
+        
+                              <li title="voucher Unapproved">
+                                <a id="ribbon__11193653558215345_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131842 - erase.ico" width="16"
+                                    height="16">voucher Unapproved</a>
+                              </li>
+        
+        
+                            </ul>
+                            <ul class="float-start menu-ribbon">
+        
+        
+                              <li title="Virement approved">
+                                <a id="ribbon__11193653558215349_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131856 - yes.ico" width="16"
+                                    height="16">Virement approved</a>
+                              </li>
+        
+        
+                              <li title="Katti dakhila milaune">
+                                <a id="ribbon__53296016127012256_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/icon/delete.jpg" width="16" height="16">Katti dakhila
+                                  milaune</a>
+                              </li>
+        
+                              <li title="Day Close Enable">
+                                <a id="ribbon__100622502233250234_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131856 - yes.ico" width="16"
+                                    height="16">Day Close Enable</a>
+                              </li>
+        
+        
+                            </ul>
+        
+                            <ul class="float-start menu-ribbon">
+        
+        
+                              <li title="ePayment Enable">
+                                <a id="ribbon__100622502233250235_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131856 - yes.ico" width="16"
+                                    height="16">ePayment Enable</a>
+                              </li>
+        
+                              <li title="ePayment Status">
+                                <a id="ribbon__100622502233250236_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131856 - yes.ico" width="16"
+                                    height="16">ePayment Status</a>
+                              </li>
+        
+                            </ul>
+        
+        
+        
+        
+                          </div>
+        
+                          <div class="" style="margin-top: -10px;">
+                            <a id="ribbon__40285601594864618_group" class="text-center" tabindex="0">प्रणाली</a>
+                          </div>
+        
+        
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-2 bd-highlight" drag-scroll-item>
+                      <div class="inset">
+                        <div class="submenu-container">
+                          <div class="submenu-inner-container">
+        
+                            <ul class="float-start menu-ribbon">
+        
+        
+                              <li title="भाषा">
+                                <a id="ribbon__2854960284115885_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/language.png" width="16"
+                                    height="16">भाषा</a>
+                              </li>
+        
+        
+                              <li title="frmchequeprintsetting">
+                                <a id="ribbon__11183828530406910_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/createuser.gif" width="16" height="16">चेक
+                                  प्रिन्ट सेटिंग</a>
+                              </li>
+        
+                              <li title="voucher Unapproved">
+                                <a id="ribbon__11193653558215345_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131842 - erase.ico" width="16"
+                                    height="16">voucher Unapproved</a>
+                              </li>
+        
+        
+                            </ul>
+                            <ul class="float-start menu-ribbon">
+        
+        
+                              <li title="Virement approved">
+                                <a id="ribbon__11193653558215349_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131856 - yes.ico" width="16"
+                                    height="16">Virement approved</a>
+                              </li>
+        
+        
+                              <li title="Katti dakhila milaune">
+                                <a id="ribbon__53296016127012256_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/icon/delete.jpg" width="16" height="16">Katti dakhila
+                                  milaune</a>
+                              </li>
+        
+                              <li title="Day Close Enable">
+                                <a id="ribbon__100622502233250234_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131856 - yes.ico" width="16"
+                                    height="16">Day Close Enable</a>
+                              </li>
+        
+        
+                            </ul>
+        
+                            <ul class="float-start menu-ribbon">
+        
+        
+                              <li title="ePayment Enable">
+                                <a id="ribbon__100622502233250235_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131856 - yes.ico" width="16"
+                                    height="16">ePayment Enable</a>
+                              </li>
+        
+                              <li title="ePayment Status">
+                                <a id="ribbon__100622502233250236_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131856 - yes.ico" width="16"
+                                    height="16">ePayment Status</a>
+                              </li>
+        
+                            </ul>
+        
+        
+        
+        
+                          </div>
+        
+                          <div class="" style="margin-top: -10px;">
+                            <a id="ribbon__40285601594864618_group" class="text-center" tabindex="0">प्रणाली</a>
+                          </div>
+        
+        
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-2 bd-highlight" drag-scroll-item>
+                      <div class="inset">
+                        <div class="submenu-container">
+                          <div class="submenu-inner-container">
+        
+                            <ul class="float-start menu-ribbon">
+        
+        
+                              <li title="भाषा">
+                                <a id="ribbon__2854960284115885_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/language.png" width="16"
+                                    height="16">भाषा</a>
+                              </li>
+        
+        
+                              <li title="frmchequeprintsetting">
+                                <a id="ribbon__11183828530406910_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/createuser.gif" width="16" height="16">चेक
+                                  प्रिन्ट सेटिंग</a>
+                              </li>
+        
+                              <li title="voucher Unapproved">
+                                <a id="ribbon__11193653558215345_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131842 - erase.ico" width="16"
+                                    height="16">voucher Unapproved</a>
+                              </li>
+        
+        
+                            </ul>
+                            <ul class="float-start menu-ribbon">
+        
+        
+                              <li title="Virement approved">
+                                <a id="ribbon__11193653558215349_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131856 - yes.ico" width="16"
+                                    height="16">Virement approved</a>
+                              </li>
+        
+        
+                              <li title="Katti dakhila milaune">
+                                <a id="ribbon__53296016127012256_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/icon/delete.jpg" width="16" height="16">Katti dakhila
+                                  milaune</a>
+                              </li>
+        
+                              <li title="Day Close Enable">
+                                <a id="ribbon__100622502233250234_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131856 - yes.ico" width="16"
+                                    height="16">Day Close Enable</a>
+                              </li>
+        
+        
+                            </ul>
+        
+                            <ul class="float-start menu-ribbon">
+        
+        
+                              <li title="ePayment Enable">
+                                <a id="ribbon__100622502233250235_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131856 - yes.ico" width="16"
+                                    height="16">ePayment Enable</a>
+                              </li>
+        
+                              <li title="ePayment Status">
+                                <a id="ribbon__100622502233250236_listitem" href="javascript:void(0)" tabindex="0"><img
+                                    src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/131856 - yes.ico" width="16"
+                                    height="16">ePayment Status</a>
+                              </li>
+        
+                            </ul>
+        
+        
+        
+        
+                          </div>
+        
+                          <div class="" style="margin-top: -10px;">
+                            <a id="ribbon__40285601594864618_group" class="text-center" tabindex="0">प्रणाली</a>
+                          </div>
+        
+        
+                        </div>
+                      </div>
+                    </div>
+                  </drag-scroll>
+                  
+               
+                  
+                </div>
+  
+              </tab>
+              <tab heading="Basic Title 1">
+  
+                <div class="inset">
+                  <div class="submenu-container">
+                    <div class="submenu-inner-container">
+                      <ul class="float-start menu-ribbon">
+  
+  
+                        <li title="frmusertype">
+                          <a id="ribbon__26661834300636740_listitem" href="javascript:loadContent('emp/user-type')"
+                            tabindex="0"><img src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/0.gif" width="16"
+                              height="16">प्रयोगकर्ताको प्रकार</a>
+                        </li>
+  
+  
+                        <li title="डिफल्ट अनुमति">
+                          <a id="ribbon__13456256184278922_listitem"
+                            href="javascript:loadContent('emp/default-permission')" tabindex="0"><img
+                              src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/0.gif" width="16"
+                              height="16">डिफल्ट अनुमति</a>
+                        </li>
+  
+  
+                        <li title="Organization Inforamtion">
+                          <a id="ribbon__-36018514390223907_listitem"
+                            href="javascript:loadContent('accounting/subordinate-office')" tabindex="0"><img
+                              src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/0.gif" width="16"
+                              height="16">संस्थाको विवरण</a>
+                        </li>
+  
+  
+                      </ul>
+                      <ul class="float-start menu-ribbon">
+  
+  
+                        <li title="कर्मचारी">
+                          <a id="ribbon__-19559203464002451_listitem" href="javascript:loadContent('emp/employee')"
+                            tabindex="0"><img src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/0.gif" width="16"
+                              height="16">कर्मचारी</a>
+                        </li>
+  
+  
+                        <li title="Assign Program">
+                          <a id="ribbon__-68683722914007815_listitem" href="javascript:loadContent('emp/assign-program')"
+                            tabindex="0"><img src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/0.gif" width="16"
+                              height="16">Assign Program</a>
+                        </li>
+  
+  
+                        <li title="Transaction Code">
+                          <a id="ribbon__-68683722914007814_listitem" href="javascript:loadContent('emp/trancode')"
+                            tabindex="0"><img src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/0.gif" width="16"
+                              height="16">Transaction Code</a>
+                        </li>
+  
+  
+                      </ul>
+                      <ul class="float-start menu-ribbon">
+  
+  
+                        <li title="प्रयोगकर्ता बनाउने">
+                          <a id="ribbon__68683722914007811_listitem" href="javascript:loadContent('emp/create-user')"
+                            tabindex="0"><img src="https://sutra.fcgo.gov.np/sutra2/menuimage/icons/ICO/0.gif" width="16"
+                              height="16">प्रयोगकर्ता बनाउने</a>
+                        </li>
+  
+                      </ul>
+  
+  
+  
+                    </div>
+                    <div class="col-sm-12">
+                      <div class="bottom-text">
+                        <a id="ribbon__-25077014432410563_group" tabindex="0">सामान्य</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+              </tab>
+              <tab heading="Basic Title 2">
+                  <br>
+                <button type="button" class="btn btn-dark" routerLink="/form">
+                  Show Layout</button>
+              </tab>
+            </tabset>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+  
+  <br>
+  <section>
+    <div class="row">
+      <div class="container-fluid">
+          <router-outlet></router-outlet>
+      </div>
+    </div>
+  </section>

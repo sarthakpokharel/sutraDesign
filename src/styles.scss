@@ -7,3 +7,68 @@
 
 /* Importing Datepicker SCSS file. */
 @import "~ngx-bootstrap/datepicker/bs-datepicker";
+
+
+body{
+    background-color: #ECF2F9;
+}
+.topHeader{
+    height: 33px;
+    max-height: 33px;
+}
+.blue{
+    background-color: #236286;
+}
+.texts{
+    color: aliceblue;
+    text-decoration: none;
+}
+.tab-menu{
+    font-size: 12px;
+}
+
+.nav-tabs{
+    background-color: #bfdbff !important;
+}
+
+.dropdown-menu {
+  
+    border: solid #236286;
+    padding: 0;
+    margin: 0.5rem 0 0;
+}
+
+.dropdown-item:hover, .dropdown-item:focus{
+    background-color: linear-gradient(to bottom,rgba(254,252,234,1) 0%, #ffdd66 100%);
+    background-color: rgba(0, 0, 0, 0);
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-image: linear-gradient(rgb(254, 252, 234) 0%, rgb(255, 221, 102) 100%);
+    background-size: auto;
+    background-origin: padding-box;
+    background-clip: border-box;
+}
+
+.dropdown-menu > li > a {
+    display: block;
+    padding: 20px 50px 10px 20px;
+  }
+ 
+//   .inset{
+//     width: 415px;
+//   }
+
+  .dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+    background-color: linear-gradient(to bottom,rgba(254,252,234,1) 0%, #ffdd66 100%);
+    background-color: rgba(0, 0, 0, 0);
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-image: linear-gradient(rgb(254, 252, 234) 0%, rgb(255, 221, 102) 100%);
+    background-size: auto;
+    background-origin: padding-box;
+    background-clip: border-box;
+  }
