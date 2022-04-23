@@ -11,11 +11,9 @@ export class AppComponent {
 
   constructor(@Inject(DOCUMENT) private document: Document) {
     this.document.body.addEventListener("click", () => {
-      var element = document.getElementsByTagName('ul');
+      var element = document.getElementsByClassName('closethis');
       for (var i = 0; i < element.length; i++) {
-        if (element[i].classList.contains('closethis')) {
           element[i].classList.remove('show');
-        }
       }
     }, true);
    }

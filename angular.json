@@ -34,7 +34,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "../node_modules/ng-easyui/themes/material/easyui.css",
+              "../node_modules/ng-easyui/themes/angular.css",
+              "../node_modules/ng-easyui/themes/icon.css"
             ],
             "scripts": []
           },

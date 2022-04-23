@@ -8,19 +8,24 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DragScrollModule } from 'ngx-drag-scroll';
 import { FormExampleComponent } from './form-example/form-example.component';
 import { HeaderComponent } from './header/header.component';
+import { TabsComponent } from './tabs/tabs.component';
+import { EasyUIModule } from 'ng-easyui';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormExampleComponent,
-    HeaderComponent
+    HeaderComponent,
+    TabsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     TabsModule.forRoot(),
     BrowserAnimationsModule,
-    DragScrollModule
+    DragScrollModule,
+    EasyUIModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
