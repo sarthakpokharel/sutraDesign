@@ -10,13 +10,15 @@ import { FormExampleComponent } from './form-example/form-example.component';
 import { HeaderComponent } from './header/header.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { EasyUIModule } from 'ng-easyui';
+import { TrialComponent } from './trial/trial.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormExampleComponent,
     HeaderComponent,
-    TabsComponent
+    TabsComponent,
+    TrialComponent
   ],
   imports: [
     BrowserModule,

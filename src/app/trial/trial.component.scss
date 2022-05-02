@@ -1,3 +1,7 @@
+.tab-menu{
+    position: absolute;
+    left: -90px;
+}
 .mic {
     width: 16px;
     height: 16px;
@@ -7,6 +11,10 @@
     width: 32px;
     height: 32px;
 }
+drag-scroll{
+    width: 100%;
+}
+
 .dropdown-menu {
     border: solid #aebacb;
 }

@@ -1,19 +1,19 @@
 import { Component, OnInit } from '@angular/core';
-import {tabList}  from './tablist' 
-@Component({
-  selector: 'app-tabs',
-  templateUrl: './tabs.component.html',
-  styleUrls: ['./tabs.component.scss']
-})
-export class TabsComponent implements OnInit {
+import {tabList} from './tablist'
 
-  tabb = tabList;
+@Component({
+  selector: 'app-trial',
+  templateUrl: './trial.component.html',
+  styleUrls: ['./trial.component.scss']
+})
+export class TrialComponent implements OnInit {
+
+  tabb = tabList
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
   openMenu(e:any){
     const element: HTMLElement = e.target;
     const ele = element.nextElementSibling?.nextElementSibling
@@ -38,6 +38,5 @@ export class TabsComponent implements OnInit {
     const element: HTMLElement = e.target
     element.nextElementSibling?.classList.remove('show')
   }
-
 
 }

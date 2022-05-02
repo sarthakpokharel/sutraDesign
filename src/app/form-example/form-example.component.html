@@ -1,50 +1,142 @@
+<div class="d-flex justify-content-between bd-highlight mb-3">
+    <div class="bd-highlight toCollapse"
+        style="width: 16%; border: 1px solid; border-color: #95b8e7; overflow: hidden; height: 78vh; margin-right: 2px;">
+        <nav class="navbar navbar-light threed">
+            <div class="container-fluid text-start">
+               <div class="b-header hideSection">
+                <div class="panel-icon icon-help"></div>
+                <b class="b-header">सहयोग</b>
+               </div>               
+               <div class="text-end b-header">
+               <a href="javascript:void(0)"> 
+                <i class="bi bi-chevron-double-right" (click)="hidesidebar($event)"></i>
+               </a> 
+               </div>
+            </div>
+          </nav>
 
+    </div>
+    <div class="bd-highlight"
+        style="width: 48%; border: 1px solid; border-color: #95b8e7; overflow: hidden; height: 78vh;  margin-right: 2px;">
+        <nav class="navbar navbar-light threed">
+            <div class="container-fluid">
+                <div class="panel-icon icon-save"></div>
+                <b class="b-header">स्रोतको तह</b>
+            </div>
+          </nav>
+          <div style="margin: 15px;">
+            <form style="font-size: small; color: #15428b;">
+                <fieldset class="p-2" style="border: 1.5px solid #b5b8c8 !important">
+                   <legend  class="float-none w-auto p-2">स्रोतको तह</legend>
+                  
+                    <div>
+                        <label>Level of Government</label>
+                        <input type="text" class="padd">
+                    </div> 
+                    <div>
+                        <label>Level of Government</label>
+                        <input type="text" class="padd">
+                    </div>
+                    <div>
+                        <label>Level of Government</label>
+                        <input type="text" class="padd">
+                    </div>
+                    <div>
+                        <label>Level of Government</label>
+                        <input type="text" class="padd">
+                    </div>
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-6">
-            <div class="card" style="background-color: #ECF2F9;">
-                <div class="container">
-                    <h2>Reactive Form</h2>
-                    <form >
-                        <div style="margin-bottom:20px">
-                            <label [for]="name" text-align="top">Name:</label>
-                            <eui-textbox #name formControlName="name"></eui-textbox>
-                            <div class="error">This field is required.</div>
-                        </div>
-                        <div style="margin-bottom:20px">
-                            <label [for]="email" text-align="top">Email:</label>
-                            <eui-textbox #email formControlName="email" ></eui-textbox>
-                            <div class="error">Please enter a valid email address.</div>
-                        </div>
-                        <div style="margin-bottom:20px">
-                            <label [for]="hero" text-align="top">Select a hero:</label>
-                            <eui-combobox #hero formControlName="hero"></eui-combobox>
-                        </div>
-                        <div style="margin-bottom:20px">
-                            <eui-checkbox #accept formControlName="accept"></eui-checkbox>
-                            <label [for]="accept">Accept Me</label>
-                        </div>
-                        <div style="margin-bottom:20px">
-                            <eui-linkbutton>Submit</eui-linkbutton>
-                        </div>
-                    </form>
+                    <div>
+                        <label>Name of Government</label>
+                        <select class="pad">
+                            <option selected>Open if this menu  </option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                    </div>
+
+                    
+                   
+                </fieldset>
+                <br>
+                <div class="text-end">
+                    <a class="easyui-linkbutton l-btn l-btn-small" href="javascript:void(0)" style="width: 50px; height: 20px;"><span class=""><span class="">Save</span></span></a>
+                    &nbsp;
+                    <a class="easyui-linkbutton l-btn l-btn-small" href="javascript:void(0)" style="width: 50px;height: 20px;"><span class=""><span class="">Cancel</span></span></a>
                 </div>
+              
+                </form>
+          </div>
+      
+       
+    </div>
+    <div class="bd-highlight"
+        style="width: 48%; border: 1px solid; border-color: #95b8e7; overflow: hidden; height: 78vh;">
+        <nav class="navbar navbar-light threed">
+            <div class="container-fluid">
+                <div class="panel-icon icon-help"></div>
+                <b class="b-header">सूची</b>
+                
             </div>
-        </div>
-        <div class="col-md-6">
-            <div class="card" style="background-color: #ECF2F9;">
-              <div class="container">
-        <eui-datagrid [data]="data" style="height:250px">
-            <eui-grid-column field="itemid" title="Item ID"></eui-grid-column>
-            <eui-grid-column field="name" title="Name"></eui-grid-column>
-            <eui-grid-column field="listprice" title="List Price" text-text-align="right"></eui-grid-column>
-            <eui-grid-column field="unitcost" title="Unit Cost" text-text-align="right"></eui-grid-column>
-            <eui-grid-column field="attr" title="Attribute" width="30%"></eui-grid-column>
-            <eui-grid-column field="status" title="Status" text-text-align="center"></eui-grid-column>
-        </eui-datagrid>
-              </div>
-            </div>
-        </div>
+          </nav>
+          <div>
+            <table class="table">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                    <th scope="col">Edit</th>
+                    <th scope="col">Delete</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td><img src="https://sutra.fcgo.gov.np/sutra2/icon/edit.gif"></td>
+                    <td><img src="https://sutra.fcgo.gov.np/sutra2/icon/delete.gif"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>                
+                    <td><img src="https://sutra.fcgo.gov.np/sutra2/icon/edit.gif"></td>
+                    <td><img src="https://sutra.fcgo.gov.np/sutra2/icon/delete.gif"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>               
+                    <td><img src="https://sutra.fcgo.gov.np/sutra2/icon/edit.gif"></td>
+                    <td><img src="https://sutra.fcgo.gov.np/sutra2/icon/delete.gif"></td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+          
+          <div>
+            <ul class="pagination pagination-sm">
+                <li class="page-item"><a class="page-link" href="#"><</a></li>
+                <li class="page-item active" aria-current="page">
+                  <span class="page-link">1</span>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">></a></li>
+              </ul>
+          </div>
+           
+
     </div>
 </div>
+
+<style>
+  
+</style>
